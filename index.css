@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+ 
+    border: 3px solid rgb(123, 223, 207);
+    border-radius: 5px;
+
+}
+.que{
+    font-size:30px;
+    font-weight:bold;
+    color: bisque;
+}
+.ans{
+    font-size:20px;
+    font-weight:bold;
+    color: rgb(164, 230, 245);
+}
+.heading{
+    font: size 25px;
+    font-weight:bolder;
+    color: rgb(201, 156, 100);
+}
+.test{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    background-color: rgb(93, 168, 46);
+    transition-property: all;
+    transition-duration: 2s;
+} 
+.test:hover{
+    width: 250px;
+}
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    flex: auto auto auto;
+    align-items: center;
+    width: 600px;
+    height:200px;
+}
+.rotate{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: rgb(89, 145, 168);
+    transition: all 2s ease-in-out;
+    animation-name: myAnimation;
+    position: relative; 
+    animation: myAnimation 4s ease 1s infinite reverse;
+}
+@keyframes myAnimation{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.grid-container{
+    background-color: tomato;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px;
+    grid-column: 2/4;
+    grid-row: 1/4;
+    
+}
+.grid-items{
+    background-color: white;
+    padding: 20px;
+    margin:2px;
+}
+
